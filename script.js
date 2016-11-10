@@ -1,13 +1,18 @@
-$( document ).ready(function() {
-    $(".answer").on("click", function(){
-       $(this).removeClass("bg-info");
+$(document).ready(function() {
+  
+  $("#submit").on("click", function() {
+    var answer = $("#unemployed").val()
+    var answerNumber = parseInt(answer);
 
-       if ($(this).hasClass("correct")) {
-          console.log("true")
-          $(this).addClass("bg-success");
-       } else {
-          $(this).addClass("bg-danger");
-          $(this).siblings(".correct").removeClass("bg-info").addClass("bg-success");
-       }
-    });
+    if (answerNumber > 2.4) {
+      var answerText = "Too high! It's 2.4%";
+    } else {
+      var answerText = "Close! But it's 2.4";
+    }
+
+    $(".answer-header").text(answerText);
+    $(".answer-container").fadeIn("slow");
+  });
+
+  
 });
