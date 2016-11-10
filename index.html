@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jQuery Quiz</title>
+  <title>The One Question Most Americans Get Wrong About College Graduates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -9,67 +11,64 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
-
-  <style>
-    .answer {
-      padding: 10px 0px;
-      border-radius: 10px;
-      text-align: center;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
   <div class="container-fluid">
     <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+        <br>
+        <img src="https://static01.nyt.com/newsgraphics/2015/10/27/college-quiz/4ba05531dc8a34cd59991df22be2cf330ca3606f/wrecking-ball.gif" class="img img-responsive">
+      </div>
+    </div>
+
+
+    <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <h1>Weekly News Quiz</h1>
-        <p><i>via NYTimes</i></p>
+        <h1>The One Question Most Americans Get Wrong About College Graduates</h1>
+        <p><b>Redone by Web Fundamentals</b></p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p>Have you been following the news? Take our quiz to see what you know and to learn more.</p>
-
-        <p>Last week, most of you — 89 percent or above — answered the questions about the World Series, the third presidential debate, the migrant crisis and AT&T correctly, and you knew that “FEC Extends Election by 7 Months to Give Nation Chance to Better Get to Know Candidates” had to be the fake news item in the 10th question.</p>
-
-        <p>This week, however, our Halloween-themed 10th question is a bit trickier. Read carefully and employ the method a seventh-grade class in Brooklyn told us it uses to get the answer right most of the time: “We have heated discussions and debates and work together to figure out the answers.”</p>
+      <div class="col-md-6 col-md-offset-3">
+        <p><b>What do you think the unemployment rate is for 25-to-34-year-olds who graduated from a four-year college?</b> (Hint: for those with only a high school degree, it’s 7.4 percent.)</p>
+        <br>
+        <div class="input-group">
+          <input type="number" class="form-control" id="unemployed" min="0" max="15">
+          <span class="input-group-addon">%</span>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <h3>Just days before Election Day, and with voters in many states already going to the polls, James B. Comey, the F.B.I. director made a stunning announcement on Oct. 28: Agents had discovered _________ that might be pertinent to an investigation into Hillary Clinton that had seemingly been closed in July.</h3>
-      </div>
-
-      <div class="col-md-4 col-md-offset-4 answers-container">
-        <p class="answer bg-info">Clinton foundation records</p>
-        <p class="answer bg-info correct">New emails</p>
-        <p class="answer bg-info">Old tax returns</p>
-        <p class="answer bg-info">Receipts for charitable giving</p>
-      </div>
+    <div class="row text-center">
+      <button type="button" id="submit" class="btn btn-primary btn-pink">Submit</button>
     </div>
 
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <h3>In a breathless month full of political bombshells, the phrase _________, first used by The Times in 1980, has become a regular part of the news lexicon. By the strictest definition, the phrase means news specifically (and cynically) timed by one side or another to sway an election, with evidence that it changed voters’ minds and moved the polls. More loosely, the term is applied to any big, late development, deliberate or not, perhaps even ones that show no sign of altering the outcome.</h3>
+    <div class="answer-container">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-5">
+          <br>
+          <img src="https://static01.nyt.com/newsgraphics/2015/10/27/college-quiz/4ba05531dc8a34cd59991df22be2cf330ca3606f/owl-09-w.png" class="img img-responsive">
+        </div>
       </div>
 
-      <div class="col-md-4 col-md-offset-4 answers-container">
-        <p class="answer bg-info">Electoral College 270</p>
-        <p class="answer bg-info ">gerrymandering</p>
-        <p class="answer bg-info">gotcha journalism</p>
-        <p class="answer correct bg-info">October surprise</p>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="text-center answer-header">Placeholder answer text</h1>
+          <p>We weren’t too surprised that most people didn’t know the exact jobless rate; most people aren’t economists. What was truly intriguing was that so many people answered in the completely wrong direction.</p>
+          <p>
+            We set out wanting to learn about people’s perceptions of the value of college, now nearly seven years after the recession, when a big supply of college graduates and low demand for work had made the case for college seem weaker. Late last year, we asked Google Consumer Surveys to ask Americans about college costs, wages after college, and unemployment rates of college graduates and nongraduates.
+          </p>
+          <p>The really interesting result was how people answered the jobless rate questions.</p>
+          <p>We asked: “What would you guess is the current unemployment rate for four-year college graduates between the ages of 25 and 34?” We also asked the same question, phrased the same way, but about high school graduates.</p>
+          <p>Initially, people were way off. The most common answers for college graduates were between 20 and 30 percent. Perhaps an understandable mistake: The question was open-ended, and maybe lots of people don’t know exactly how an unemployment rate is defined (it doesn’t include people who aren’t looking for jobs). But what surprised us was that the majority of people thought that unemployment rates for those with college degrees were higher than for those without.</p>
+          <p>We were so surprised that we thought we had done something wrong. Maybe we asked the question unclearly, or perhaps people weren’t thinking about unemployment rates consistently. So we ran the survey again, this time with a point of reference to anchor them. Our focus this time was figuring out whether people were completely mistaken about the effect of a college degree on one’s chances of having a job.</p>
+        </div>
       </div>
-    </div>
   </div>
 </body>
 </html>
